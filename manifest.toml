@@ -5,7 +5,7 @@ description = "Security event logging and monitoring system"
 author = "Catalyst Team"
 license = "MIT"
 min_framework_version = "0.1.0"
-repository = "https://github.com/catalyst-framework/plznohac"
+repository = "https://github.com/Arete-Innovations/plznohac"
 
 [dependencies]                                                                                                                                                                                    
 diesel = { version = "2.2.7", features = ["r2d2"] }
