@@ -1,0 +1,34 @@
+[spark]
+name = "plznohac"
+version = "0.1.0"
+description = "Security event logging and monitoring system"
+author = "Catalyst Team"
+license = "MIT"
+min_framework_version = "0.1.0"
+repository = "https://github.com/catalyst-framework/plznohac"
+
+[dependencies]
+features = [
+  { crate_name = "diesel", features = ["r2d2"] },
+  { crate_name = "toml"},
+]
+
+[config]
+required_env = [
+  "DATABASE_URL"  # Connection string for security events database
+]
+
+optional_env = [
+  "LOG_FILE_PATH",          # Path to log security events to file (optional)
+  "ENABLE_REALTIME_ALERTS"  # Enable real-time security alerts (defaults to false)
+]
+
+# Configuration defaults that can be overridden in Catalyst.toml
+[config.defaults]
+enable_real_time_alerts = false
+log_level = "info"
+max_event_retention_days = 90
+
+[[migrations]]
+name = "initial"
+path = "migrations/v1_initial"
