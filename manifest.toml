@@ -7,11 +7,9 @@ license = "MIT"
 min_framework_version = "0.1.0"
 repository = "https://github.com/catalyst-framework/plznohac"
 
-[dependencies]
-features = [
-  { crate_name = "diesel", features = ["r2d2"] },
-  { crate_name = "toml"},
-]
+[dependencies]                                                                                                                                                                                    │
+diesel = { version = "2.2.7", features = ["r2d2"] }                                                                                                                                               │
+toml = "0.8.20"                                        
 
 [config]
 required_env = [
