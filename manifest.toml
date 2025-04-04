@@ -29,4 +29,4 @@ max_event_retention_days = 90
 
 [[migrations]]
 name = "initial"
-path = "migrations/v1_initial"
+path = "migrations/initial"
