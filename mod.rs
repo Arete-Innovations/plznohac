@@ -46,6 +46,10 @@ impl Spark for PlzNoHacSpark {
     fn name(&self) -> &str {
         "plznohac"
     }
+    
+    fn description(&self) -> &str {
+        "Security and anomaly detection system"
+    }
 }
 
 // Export a function to create the spark
