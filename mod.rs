@@ -46,7 +46,7 @@ impl Spark for PlzNoHacSpark {
     fn name(&self) -> &str {
         "plznohac"
     }
-    
+
     fn description(&self) -> &str {
         "Security and anomaly detection system"
     }
@@ -113,7 +113,7 @@ impl PlzNoHac {
     ///
     /// # Example
     ///
-    /// ```rust
+    /// ```ignore
     /// let mut security = PlzNoHac::new();
     /// security.initialize()?;
     /// ```

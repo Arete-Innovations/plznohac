@@ -20,4 +20,3 @@ impl ContextEnricher for IdentityEnricher {
         }
     }
 }
-

@@ -80,4 +80,3 @@ impl<'r> ContextEnricher for HttpRequestEnricher<'r> {
         }
     }
 }
-

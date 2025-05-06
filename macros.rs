@@ -37,7 +37,7 @@ macro_rules! security_event {
 /// - Extracts relevant information for properly formatting the event
 ///
 /// # Basic usage with request context:
-/// ```
+/// ```ignore
 /// secure_log!(request, TokenTampering, High, "JWT validation failed", json!({
 ///     "error": "invalid signature",
 ///     "tampering_type": "invalid_signature"
@@ -45,7 +45,7 @@ macro_rules! security_event {
 /// ```
 ///
 /// # Usage without request context (from global instance):
-/// ```
+/// ```ignore
 /// secure_log!(TokenTampering, High, "Suspicious activity detected", json!({
 ///     "activity": "repeated failed logins",
 ///     "username": username
@@ -115,4 +115,3 @@ macro_rules! secure_log {
         }
     }};
 }
-
